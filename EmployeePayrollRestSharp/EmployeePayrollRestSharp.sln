@@ -5,6 +5,13 @@ VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeePayrollRestSharp", "EmployeePayrollRestSharp\EmployeePayrollRestSharp.csproj", "{D7B3173C-E73B-45FB-8C8A-B974BCA38FD9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{04DEDCFE-D9BD-49BC-B532-96BD2C663184}"
+	ProjectSection(SolutionItems) = preProject
+		employee.json = employee.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayrollTest", "PayrollTest\PayrollTest.csproj", "{67A9C7D8-C59C-48E9-8C4F-4C2078DBA963}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +22,10 @@ Global
 		{D7B3173C-E73B-45FB-8C8A-B974BCA38FD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7B3173C-E73B-45FB-8C8A-B974BCA38FD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7B3173C-E73B-45FB-8C8A-B974BCA38FD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67A9C7D8-C59C-48E9-8C4F-4C2078DBA963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67A9C7D8-C59C-48E9-8C4F-4C2078DBA963}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67A9C7D8-C59C-48E9-8C4F-4C2078DBA963}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67A9C7D8-C59C-48E9-8C4F-4C2078DBA963}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
