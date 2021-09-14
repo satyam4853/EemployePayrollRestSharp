@@ -172,5 +172,39 @@ namespace PayrollTest
 
         }
 
+        /// <summary>
+        /// test method to update details
+        /// </summary>
+        [TestMethod]
+        public void TestMethodToUpdateDetails()
+        {
+            try
+            {
+                //Setting rest request to url and setiing method to put to update details
+                RestRequest request = new RestRequest("/employees/4", Method.PUT);
+                //object for json
+                JsonObject json = new JsonObject();
+                //Adding new employee details to json object
+                json.Add("name", "Omi shinde");
+                json.Add("salary", 20000);
+                //adding type as json in request and pasing the json object as a body of request
+                request.AddParameter("application/json", json, ParameterType.RequestBody);
+                //execute the request
+                IRestResponse response = client.Execute(request);
+                //deserialize json object to employee class  object
+                var res = JsonConvert.DeserializeObject<Employee>(response.Content);
+
+                //Checking the response statuscode 200  - ok
+                Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
+
+                //Printing deatils
+                Console.WriteLine($"id = {res.id} , name = {res.name} , salary = {res.salary}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
     }
 }

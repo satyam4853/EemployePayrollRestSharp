@@ -18,8 +18,8 @@
       "salary": 11000
     },
     {
-      "name": "Omi",
-      "salary": 15000,
+      "name": "Omi shinde",
+      "salary": 20000,
       "id": 4
     },
     {
@@ -37,6 +37,10 @@
       "name": "Alex",
       "salary": 35000
     }
-
+    {
+      "id": 8,
+      "name": "Alex Xander",
+      "salary": 25000
+    }
   ]
 }
